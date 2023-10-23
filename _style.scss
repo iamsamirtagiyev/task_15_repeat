@@ -1,0 +1,160 @@
+.container{
+    max-width: 1500px;
+    margin: auto;
+    padding: 0 100px;
+}
+
+nav{
+    width: 100%;
+    background: $container;
+    padding: 30px 10px;
+    .nav{
+        @include flex(center, space-between);
+        .logo{
+            width: 80px;
+            height: 40px;
+            background: $item;
+        }
+        .menu{
+            width: 500px;
+            height: 40px;
+            background: $item;
+        }
+        .button{
+            width: 80px;
+            height: 40px;
+            background: $item;
+        }
+    }
+}
+
+.section-1{
+    width: 100%;
+    background: $container;
+    padding: 50px 10px;
+    .box{
+        @include flex(center, space-between);
+        gap: 50px;
+        div{
+            width: 50%;
+            height: 500px;
+            background: $item;
+        }
+    }
+}
+.section-2{
+    width: 100%;
+    background: $container;
+    padding: 50px 10px;
+    .box{
+        @include flex(center, center);
+        flex-direction: column;
+        gap: 50px;
+        .top{
+            width: 500px;
+            height: 300px;
+            background: $item;
+        }
+        .bottom{
+            width: 100%;
+            @include flex(center, center);
+            gap: 30px;
+            div{
+                width: 30%;
+                height: 400px;
+                background: $item;
+            }
+        }
+    }
+}
+
+.section-3{
+    width: 100%;
+    background: $container;
+    padding: 50px 25px;
+    .box{
+        @include flex(center, center);
+        gap: 50px;
+        div{
+            width: 30%;
+            height: 70px;
+            background: $item;
+        }
+    }
+}
+
+.section-4{
+    width: 100%;
+    background: $container;
+    padding: 50px 25px;
+    .box{
+        @include flex(center, center);
+        flex-direction: column;
+        gap: 50px;
+        .text{
+            width: 70%;
+            height: 100px;
+            background: $item;
+        }
+        .image{
+            width: 70%;
+            height: 400px;
+            background: $item;
+        }
+    }
+}
+
+.section-5{
+    width: 100%;
+    background: $container;
+    padding: 50px 10px;
+    .box{
+        @include flex(center, center);
+        flex-direction: column;
+        gap: 50px;
+        .top{
+            width: 500px;
+            height: 200px;
+            background: $item;
+        }
+        .bottom{
+            width: 100%;
+            @include flex(center, center);
+            gap: 30px;
+            div{
+                width: 50%;
+                height: 200px;
+                background: $item;
+            }
+        }
+    }
+}
+
+.section-6{
+    width: 100%;
+    background: $container;
+    padding: 50px 10px;
+    .box{
+        @include flex(center, center);
+        div{
+            width: 80%;
+            height: 100px;
+            background: $item;
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    background: #252525;
+    padding: 50px 10px;
+    .box{
+        @include flex(center, center);
+        gap: 50px;
+        div{
+            width: 30%;
+            height: 100px;
+            background: $item;
+        }
+    }
+}
